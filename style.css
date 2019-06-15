@@ -25,6 +25,20 @@ a:hover {
   color: #1a73e8;
 }
 
+a.header:link,
+a.header:hover,
+a.header:visited,
+a.header:active {
+  color: #1a73e8;
+  transition: all 0.2s linear;
+  text-decoration: none;
+}
+
+a.header:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
 #content {
   display: block;
   background-color: #fff;
@@ -95,7 +109,7 @@ h1 {
   align-items: center;
 }
 
-.emoji {
+.title-emoji {
   font-size: 16px;
   margin-right: 10px;
 }
