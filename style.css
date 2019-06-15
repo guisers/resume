@@ -13,6 +13,18 @@ body {
   width: 100vw;
 }
 
+a:link,
+a:hover,
+a:visited,
+a:active {
+  transition: color 0.2s linear;
+  color: #888;
+}
+
+a:hover {
+  color: #1a73e8;
+}
+
 #content {
   display: block;
   background-color: #fff;
@@ -34,7 +46,7 @@ header {
   text-align: right;
 }
 
-#contact-info div {
+#contact-info * {
   font-size: 10px;
 }
 
