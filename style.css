@@ -30,7 +30,7 @@ a.header:hover,
 a.header:visited,
 a.header:active {
   color: #1a73e8;
-  transition: all 0.2s linear;
+  transition: opacity 0.2s linear;
   text-decoration: none;
 }
 
