@@ -11,15 +11,29 @@ body {
 
 #container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 100vh;
   width: 100vw;
 }
 
+#content {
+  margin: 20px 0px;
+  display: block;
+  background-color: #fff;
+  width: calc(85vh * 8.5 / 11);
+  height: 85vh;
+  padding: 60px 35px 40px;
+  overflow: scroll;
+}
+
 footer {
   background-color: #eee;
-  height: 80px;
+  flex: 1;
+  min-block-size: fit-content;
+  padding: 15px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,15 +77,6 @@ a.header:hover {
   text-decoration: underline;
 }
 
-#content {
-  display: block;
-  background-color: #fff;
-  width: calc(95vh * 8.5 / 11);
-  height: 95vh;
-  padding: 60px 35px 40px;
-  overflow: scroll;
-}
-
 header {
   display: flex;
   align-items: center;
@@ -90,6 +95,7 @@ header {
 
 main {
   display: flex;
+  flex-wrap: wrap-reverse;
 }
 
 #left-column {
@@ -99,6 +105,7 @@ main {
 
 #right-column {
   flex: 2.4;
+  flex-basis: 300px;
 }
 
 section:not(:last-child) {
@@ -160,6 +167,8 @@ h3 {
   margin-top: 0px;
   display: flex;
   align-items: center;
+  flex: 1;
+  flex-wrap: wrap;
 }
 
 h3 span {
