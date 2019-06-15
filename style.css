@@ -6,11 +6,35 @@
 
 body {
   background-color: #444;
+  margin: 0px;
+}
+
+#container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   width: 100vw;
+}
+
+footer {
+  background-color: #eee;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #444;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+
+footer div:not(:last-child) {
+  margin-bottom: 5px;
 }
 
 a:link,
@@ -112,6 +136,11 @@ h1 {
 .title-emoji {
   font-size: 16px;
   margin-right: 10px;
+}
+
+.emoji {
+  font-size: 9px;
+  margin-right: 5px;
 }
 
 h2 {
