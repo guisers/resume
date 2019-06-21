@@ -99,12 +99,13 @@ main {
 
 #left-column {
   flex: 1;
+  flex-basis: 91px;
   padding-right: 20px;
 }
 
 #right-column {
   flex: 2.4;
-  flex-basis: 300px;
+  flex-basis: 292px;
 }
 
 section:not(:last-child) {
