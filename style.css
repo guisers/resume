@@ -108,6 +108,13 @@ main {
   flex-basis: 292px;
 }
 
+@media (max-width: 493px) {
+  #right-column {
+    border-bottom: solid 1px #aaa;
+    padding-bottom: 10px;
+  }
+}
+
 section:not(:last-child) {
   border-bottom: solid 1px #aaa;
   padding-bottom: 10px;
